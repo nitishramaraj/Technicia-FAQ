@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+/* Flex INIT */
+.flex-faq{
+    display: flex;
+    justify-content: space-around;
+}
+/*  */
+
+
+
+/* FAQ QUESTIONS FLEX-LEFT */
+.main-container{
+    margin-top: 5%;
+    max-width: 100%;
+    margin-left: 2%;
+}
+
+.question button{
+    width: 70%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 20px 12px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    /* outline: auto; */
+}
+
+.question p{
+    font-size: 22px;
+    max-height: 0;
+    opacity: 0;
+    line-height: 1.5;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.question p.show{
+    background-color: rgba(39, 165, 240, 1);
+    color: white;
+    max-height: 200px;
+    max-width: 70%;
+    font-size: 15px;
+    opacity: 1;
+    padding: 2%;
+    padding-top: 1%;
+    padding-left: 3%;
+}
+
+.question button .arrow.show-arrow{
+    transform: rotate(180deg);
+}
+
+/* END FLEX LEFT */
+
+/* FLEX RIGHT */
+.right{
+    padding-top:10%;
+}
+.blue{
+    color: rgba(39, 165, 239, 1);
+}
+.underline{
+    text-decoration: underline ;
+    text-decoration-thickness: 8px ;
+}
+.faq-head{
+    font-size: 100px;
+    writing-mode: vertical-lr;  
+    letter-spacing: 10px;
+    padding-bottom: 2%;
+    
+}
+
+@media only screen and (max-width: 700px) {
+    .flex-faq{
+        flex-wrap: wrap-reverse;
+    }
+
+    .faq-head{
+        writing-mode: horizontal-tb;
+    }
+    .question button{
+        width: 100%;
+    }
+    .question p.show{
+        max-width: 100%;
+    }
+  }
+
+
+
+
+/*  */
+
