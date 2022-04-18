@@ -76,7 +76,7 @@ body{
 /* FLEX RIGHT */
 .right{
     padding-top:10%;
-    padding-right: 5%;
+    padding-right:5%;
 }
 .blue{
     color: rgba(39, 165, 239, 1);
@@ -89,7 +89,7 @@ body{
     padding-left: 50%;
     padding-top: 50%;
     padding-bottom: 30%;
-    /* padding-right: 0%; */
+    padding-right: 0%;
     /* padding-bottom: 50%; */
     font-size: 100px;
     writing-mode: vertical-rl;  
@@ -110,12 +110,12 @@ body{
     /* padding-top: 2%; */
     content: '';
     display: block;
-    width: 200px;
+    width: 198.2px;
     height: 5px;
     background: rgba(39, 165, 239, 1);
     position: absolute;
     top: -11%;
-    transform: rotate(-27deg);
+    transform: rotate(-26.5deg);
     /* left: 10%; */
 
 }
