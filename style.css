@@ -28,7 +28,7 @@ body{
 
 /* FAQ QUESTIONS FLEX-LEFT */
 .accordion {
-  padding-top: 5%;
+    padding-top: 5%;
     width: 60%;
     max-width: 1000px;
   }
@@ -89,16 +89,17 @@ body{
   text-decoration-thickness: 8px ;
 }
 .faq-head{
-  padding-left: 50%;
-  padding-top: 50%;
-  padding-bottom: 30%;
-  font-size: 100px;
-  writing-mode: vertical-rl;  
-  letter-spacing: 10px;
-  position: relative;
-  border-left: solid 5px rgba(39, 165, 239, 1);
-  border-bottom: solid 5px rgba(39, 165, 239, 1);
-  /* background-color: white; */
+    padding-left: 50%;
+    padding-top: 50%; 
+    padding-bottom: 30%; 
+    font-size: 100px;
+    writing-mode: vertical-rl;  
+    letter-spacing: 10px;
+    position: relative;
+    border-left: solid 5px rgba(39, 165, 239, 1);
+    border-bottom: solid 5px rgba(39, 165, 239, 1);
+    right: 3%;
+
 
   
 }
