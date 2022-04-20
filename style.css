@@ -19,8 +19,9 @@ body{
 
 /* Flex INIT */
 .flex-faq{
+    width: 96.3vw;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
 }
 /*  */
 
@@ -90,6 +91,8 @@ body{
 .faq-head{
     padding-left: 50%;
     padding-top: 50%; 
+  padding-right: 2%;
+
     padding-bottom: 30%; 
     font-size: 90px;
     writing-mode: vertical-rl;  
