@@ -28,6 +28,7 @@ body{
 
 /* FAQ QUESTIONS FLEX-LEFT */
 .accordion {
+  padding-top: 5%;
     width: 60%;
     max-width: 1000px;
   }
@@ -74,45 +75,47 @@ body{
 
 /* FLEX RIGHT */
 .right{
-    height: auto;
-    justify-content: flex-end;
-    position: relative;
-    padding-top:10%;
+  position: relative;
+  justify-content: flex-end;
+  /* position:; */
+  padding-top:10%;
+  padding-right:auto;
 }
 .blue{
-    color: rgba(39, 165, 239, 1);
+  color: rgba(39, 165, 239, 1);
 }
 .underline{
-    text-decoration: underline ;
-    text-decoration-thickness: 8px ;
+  text-decoration: underline ;
+  text-decoration-thickness: 8px ;
 }
 .faq-head{
-    padding-left: 50%;
-    padding-top: 50%; 
-    padding-bottom: 30%; 
-    font-size: 100px;
-    writing-mode: vertical-rl;  
-    letter-spacing: 10px;
-    position: relative;
-    border-left: solid 5px rgba(39, 165, 239, 1);
-    border-bottom: solid 5px rgba(39, 165, 239, 1);
-    right: 9%;
+  padding-left: 50%;
+  padding-top: 50%;
+  padding-bottom: 30%;
+  font-size: 100px;
+  writing-mode: vertical-rl;  
+  letter-spacing: 10px;
+  position: relative;
+  border-left: solid 5px rgba(39, 165, 239, 1);
+  border-bottom: solid 5px rgba(39, 165, 239, 1);
+  /* background-color: white; */
 
-    
+  
 }
 
-.faq-head::before{
-    float: right;
-    content: '';
-    display: block;
-    width: 198.2px;
-    height: 5px;
-    background: rgba(39, 165, 239, 1);
-    position: absolute;
-    top: -11.5%;
-    transform: rotate(-26.5deg);
+.faq-head:before{
+  float: right;
+  content: '';
+  display: block;
+  width: 198.2px;
+  height: 5px;
+  background: rgba(39, 165, 239, 1);
+  position: absolute;
+  top: -11.5%;
+  transform: rotate(-26.5deg);
 
 }
+
 
 
 @media only screen and (max-width: 700px) {
