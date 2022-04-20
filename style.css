@@ -28,6 +28,7 @@ body{
 
 /* FAQ QUESTIONS FLEX-LEFT */
 .accordion {
+    padding-top: 5%;
     width: 60%;
     max-width: 1000px;
   }
