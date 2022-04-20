@@ -19,7 +19,7 @@ body{
 
 /* Flex INIT */
 .flex-faq{
-    width: 96.5vw;
+    width: 97vw;
     display: flex;
     justify-content:space-between;
 }
