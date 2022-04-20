@@ -1,12 +1,23 @@
-const buttons = document.querySelectorAll('button');
+const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 
-buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-        const answer = btn.nextElementSibling;
-        const arrow = btn.children[1];
+accordionItemHeaders.forEach(accordionItemHeader => {
+    accordionItemHeader.addEventListener("click", event => {
 
-        answer.classList.toggle('show');
-        arrow.classList.toggle('show-arrow');
 
-    })
-})
+        const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+        if (currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader !== accordionItemHeader) {
+            currentlyActiveAccordionItemHeader.classList.toggle("active");
+            currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+        }
+
+        accordionItemHeader.classList.toggle("active");
+        const accordionItemBody = accordionItemHeader.nextElementSibling;
+        if (accordionItemHeader.classList.contains("active")) {
+            accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+        }
+        else {
+            accordionItemBody.style.maxHeight = 0;
+        }
+
+    });
+});
