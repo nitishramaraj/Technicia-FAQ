@@ -122,30 +122,23 @@ body{
 
 
 
-@media only screen and (max-width: 700px) {
-    *{
-      padding-top: 3%;
-    }
-    .flex-faq{
-        /* flex-wrap: wrap-reverse; */
-      padding-top: 3%;
 
-        width: 93%;
+@media only screen and (max-width: 700px) {
+    .flex-faq{
+        flex-wrap: wrap-reverse;
     }
 
     .faq-head{
-      padding-top: 30%; 
-
-      font-size: 4em;
+        padding: 10%;
+        writing-mode: horizontal-tb;
+        border: none;
         text-align: center;
     }
     .faq-head:before{
-      width: 130px;
-      height: 5px;
-        /* display: none; */
+        display: none;
     }
     .accordion{
-        width: 70%;
+        width: 100%;
         padding: 4%;
     }
     
